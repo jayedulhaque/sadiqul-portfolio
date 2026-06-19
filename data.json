@@ -3,20 +3,44 @@
     "name": "Sadiqul Islam",
     "title": "Deputy Manager, Business Development",
     "tagline": "Results-driven SaaS & ERP sales leader — 9+ years scaling revenue, teams, and digital transformation",
-    "bio": "With 9 years and 7 months of experience in the software industry, Sadiqul Islam is a seasoned business development leader specializing in SaaS automation, ERP solutions, and full-cycle sales management. Holding a BBA in Marketing from United International University and currently pursuing an MBA in Marketing at Eastern University, he combines strategic market insight with hands-on team leadership to drive measurable revenue growth and operational excellence across enterprise clients.",
+    "bio": "With 9 years and 6 months of experience in the software industry, Sadiqul Islam is a seasoned business development leader specializing in SaaS automation, ERP solutions, and full-cycle sales management. Holding a BBA in Marketing from United International University and currently pursuing an MBA in Marketing at Eastern University, he combines strategic market insight with hands-on team leadership to drive measurable revenue growth and operational excellence across enterprise clients.",
     "avatar": "profile.jpg",
     "linkedin": "https://www.linkedin.com/in/sadiqulalamarko/",
     "email": "smsadiqulislam786@gmail.com"
   },
   "stats": [
-    { "value": "9+ Years", "label": "Software Industry Experience" },
-    { "value": "BDT 1.5 Cr+", "label": "Annual Sales Revenue" },
-    { "value": "+20% YoY", "label": "SaaS Customer Base Growth" },
-    { "value": "75% / 25%", "label": "Personal vs Team Sales Split" },
-    { "value": "+20%", "label": "Annual Target Exceeded" },
-    { "value": "-30%", "label": "Manual Workload Reduction" },
-    { "value": "-25%", "label": "Project Delivery Timeline Improvement" },
-    { "value": "4-Member", "label": "Cross-Functional Team Led" }
+    {
+      "value": "9+ Years",
+      "label": "Software Industry Experience"
+    },
+    {
+      "value": "BDT 1.5 Cr+",
+      "label": "Annual Sales Revenue"
+    },
+    {
+      "value": "+20% YoY",
+      "label": "SaaS Customer Base Growth"
+    },
+    {
+      "value": "75% / 25%",
+      "label": "Personal vs Team Sales Split"
+    },
+    {
+      "value": "+20%",
+      "label": "Annual Target Exceeded"
+    },
+    {
+      "value": "-30%",
+      "label": "Manual Workload Reduction"
+    },
+    {
+      "value": "-25%",
+      "label": "Project Delivery Timeline Improvement"
+    },
+    {
+      "value": "4-Member",
+      "label": "Cross-Functional Team Led"
+    }
   ],
   "skills": [
     "SaaS Sales",
