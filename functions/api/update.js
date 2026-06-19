@@ -63,7 +63,6 @@ export async function onRequestPost(context) {
     return json({
       ok: true,
       message: 'Portfolio updated. Your site will refresh in 1–2 minutes after Cloudflare redeploys.',
-      commit: result.commit?.html_url || null,
     });
   } catch (error) {
     return json({ error: error.message || 'Unexpected server error.' }, 500);
@@ -108,6 +107,10 @@ function validatePortfolioData(data) {
 
   if (typeof profile.linkedin !== 'string') {
     return 'Profile "linkedin" must be a string (use empty string if none).';
+  }
+
+  if (typeof profile.phone !== 'string') {
+    return 'Profile "phone" must be a string (use empty string if none).';
   }
 
   if (!Array.isArray(stats) || stats.length === 0) {

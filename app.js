@@ -121,6 +121,9 @@ function renderContact(profile) {
   setMailtoLink('cta-email', mailto, 'Get In Touch');
   setMailtoLink('footer-email', mailto, profile.email);
 
+  setPhoneLink('cta-phone', profile.phone, 'Call');
+  setPhoneLink('footer-phone', profile.phone, profile.phone);
+
   const linkedinBtn = document.getElementById('cta-linkedin');
   if (linkedinBtn) {
     if (profile.linkedin) {
@@ -130,6 +133,26 @@ function renderContact(profile) {
       linkedinBtn.classList.add('hidden');
     }
   }
+}
+
+function setPhoneLink(id, phone, label) {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  if (phone) {
+    el.href = `tel:${formatPhoneHref(phone)}`;
+    el.textContent = label;
+    el.classList.remove('hidden');
+  } else {
+    el.classList.add('hidden');
+  }
+}
+
+function formatPhoneHref(phone) {
+  const digits = phone.replace(/\D/g, '');
+  if (digits.startsWith('880')) return `+${digits}`;
+  if (digits.startsWith('0')) return `+880${digits.slice(1)}`;
+  return `+880${digits}`;
 }
 
 function setMailtoLink(id, href, label) {

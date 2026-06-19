@@ -82,16 +82,6 @@ adminForm.addEventListener('submit', async (event) => {
 
     portfolioData = payload;
     setStatus(result.message, 'success');
-
-    if (result.commit) {
-      const link = document.createElement('a');
-      link.href = result.commit;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.textContent = 'View commit on GitHub';
-      formStatus.appendChild(document.createElement('br'));
-      formStatus.appendChild(link);
-    }
   } catch (error) {
     setStatus(error.message, 'error');
   } finally {
@@ -153,6 +143,7 @@ function populateForm(data) {
   document.getElementById('profile-bio').value = data.profile.bio;
   document.getElementById('profile-avatar').value = data.profile.avatar;
   document.getElementById('profile-email').value = data.profile.email;
+  document.getElementById('profile-phone').value = data.profile.phone || '';
   document.getElementById('profile-linkedin').value = data.profile.linkedin || '';
   document.getElementById('skills-input').value = data.skills.join('\n');
 
@@ -212,6 +203,7 @@ function collectFormData() {
       avatar: document.getElementById('profile-avatar').value.trim(),
       linkedin: document.getElementById('profile-linkedin').value.trim(),
       email: document.getElementById('profile-email').value.trim(),
+      phone: document.getElementById('profile-phone').value.trim(),
     },
     stats,
     skills,
