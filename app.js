@@ -179,7 +179,7 @@ function renderContact(profile) {
   setMailtoLink('footer-email', mailto, profile.email);
 
   setPhoneLink('cta-phone', profile.phone, 'Call');
-  setPhoneLink('footer-phone', profile.phone, profile.phone);
+  setPhoneLink('footer-phone', profile.phone, 'Call');
 
   const linkedinBtn = document.getElementById('cta-linkedin');
   if (linkedinBtn) {
