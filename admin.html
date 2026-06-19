@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Portfolio Admin | Sadiqul Islam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+
+  <header id="site-header">
+    <nav class="nav-inner">
+      <a href="/" class="nav-brand">Portfolio Admin</a>
+      <div class="nav-links">
+        <a href="/" class="nav-link">View Site</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <div class="section-inner admin-container">
+
+      <div class="admin-header">
+        <h1>Edit Portfolio</h1>
+        <p class="admin-lead">Update any section below and submit. Changes are saved to GitHub and your live site redeploys automatically.</p>
+      </div>
+
+      <div id="auth-gate" class="admin-card hidden">
+        <h2>Admin Access</h2>
+        <p>Enter your admin password to load and edit portfolio data.</p>
+        <label class="field">
+          <span>Password</span>
+          <input type="password" id="auth-password" autocomplete="current-password" placeholder="Admin password">
+        </label>
+        <button type="button" id="auth-unlock" class="btn btn-primary">Unlock Editor</button>
+        <p id="auth-error" class="form-error hidden"></p>
+      </div>
+
+      <form id="admin-form" class="hidden">
+        <label class="field">
+          <span>Admin password</span>
+          <input type="password" id="submit-password" autocomplete="current-password" required placeholder="Required to save changes">
+        </label>
+
+        <section class="admin-card">
+          <h2>Profile</h2>
+          <div class="field-grid">
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" id="profile-name" required>
+            </label>
+            <label class="field">
+              <span>Job title</span>
+              <input type="text" id="profile-title" required>
+            </label>
+            <label class="field field-full">
+              <span>Tagline</span>
+              <input type="text" id="profile-tagline" required>
+            </label>
+            <label class="field field-full">
+              <span>Bio</span>
+              <textarea id="profile-bio" rows="5" required></textarea>
+            </label>
+            <label class="field">
+              <span>Avatar filename</span>
+              <input type="text" id="profile-avatar" required placeholder="profile.jpg">
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" id="profile-email" required>
+            </label>
+            <label class="field field-full">
+              <span>LinkedIn URL</span>
+              <input type="url" id="profile-linkedin" placeholder="https://www.linkedin.com/in/...">
+            </label>
+          </div>
+        </section>
+
+        <section class="admin-card">
+          <div class="section-toolbar">
+            <h2>Stats</h2>
+            <button type="button" id="add-stat" class="btn btn-outline btn-sm">+ Add stat</button>
+          </div>
+          <div id="stats-list" class="repeat-list"></div>
+        </section>
+
+        <section class="admin-card">
+          <h2>Skills</h2>
+          <label class="field">
+            <span>One skill per line</span>
+            <textarea id="skills-input" rows="10" required placeholder="SaaS Sales&#10;ERP Solutions"></textarea>
+          </label>
+        </section>
+
+        <section class="admin-card">
+          <div class="section-toolbar">
+            <h2>Campaigns</h2>
+            <button type="button" id="add-campaign" class="btn btn-outline btn-sm">+ Add campaign</button>
+          </div>
+          <div id="campaigns-list" class="repeat-list"></div>
+        </section>
+
+        <div class="admin-actions">
+          <button type="submit" id="submit-btn" class="btn btn-primary btn-lg">Save &amp; Publish</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

@@ -451,6 +451,20 @@ img {
   line-height: 1.7;
 }
 
+.footer-admin-link {
+  margin-top: 24px;
+  font-size: 0.85rem;
+}
+
+.footer-admin-link a {
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.footer-admin-link a:hover {
+  color: var(--accent);
+}
+
 /* Error state */
 .error-message {
   color: #F87171;
