@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderCampaigns(data.campaigns);
     renderSkills(data.skills);
     renderContact(data.profile);
+    renderSeo(data.profile, data.skills);
   } catch (error) {
     console.error('Portfolio data load error:', error);
     showError('Unable to load portfolio data. Please serve this site via a local HTTP server.');
@@ -30,6 +31,62 @@ function renderProfile(profile) {
   }
 
   document.title = `${profile.name} | Business Development Executive`;
+}
+
+const SITE_URL = 'https://sadiqul.pages.dev';
+
+function renderSeo(profile, skills) {
+  const pageTitle = `${profile.name} | Business Development Executive`;
+  const description = `${profile.name} — ${profile.title}. ${profile.tagline}`;
+  const imageUrl = profile.avatar.startsWith('http')
+    ? profile.avatar
+    : `${SITE_URL}/${profile.avatar.replace(/^\//, '')}`;
+
+  document.title = pageTitle;
+  setMetaContent('description', description);
+  setMetaContent('og:title', pageTitle, 'property');
+  setMetaContent('og:description', description, 'property');
+  setMetaContent('og:url', `${SITE_URL}/`, 'property');
+  setMetaContent('og:image', imageUrl, 'property');
+  setMetaContent('twitter:title', pageTitle);
+  setMetaContent('twitter:description', description);
+  setMetaContent('twitter:image', imageUrl);
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: profile.name,
+    jobTitle: profile.title,
+    description: profile.bio,
+    url: SITE_URL,
+    image: imageUrl,
+    email: profile.email,
+    knowsAbout: skills,
+    sameAs: profile.linkedin ? [profile.linkedin] : [],
+  };
+
+  if (profile.phone) {
+    jsonLd.telephone = profile.phone;
+  }
+
+  let script = document.getElementById('portfolio-jsonld');
+  if (!script) {
+    script = document.createElement('script');
+    script.id = 'portfolio-jsonld';
+    script.type = 'application/ld+json';
+    document.head.appendChild(script);
+  }
+  script.textContent = JSON.stringify(jsonLd);
+}
+
+function setMetaContent(name, content, attr = 'name') {
+  let el = document.querySelector(`meta[${attr}="${name}"]`);
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute(attr, name);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content);
 }
 
 function renderStats(stats) {
