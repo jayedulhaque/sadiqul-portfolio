@@ -1,0 +1,82 @@
+{
+  "profile": {
+    "name": "Sadiqul Islam",
+    "title": "Deputy Manager, Business Development",
+    "tagline": "Results-driven SaaS & ERP sales leader — 9+ years scaling revenue, teams, and digital transformation",
+    "bio": "With 9 years and 7 months of experience in the software industry, Sadiqul Islam is a seasoned business development leader specializing in SaaS automation, ERP solutions, and full-cycle sales management. Holding a BBA in Marketing from United International University and currently pursuing an MBA in Marketing at Eastern University, he combines strategic market insight with hands-on team leadership to drive measurable revenue growth and operational excellence across enterprise clients.",
+    "avatar": "profile.jpg",
+    "linkedin": "",
+    "email": "smsadiqulislam786@gmail.com"
+  },
+  "stats": [
+    { "value": "9+ Years", "label": "Software Industry Experience" },
+    { "value": "BDT 1.5 Cr+", "label": "Annual Sales Revenue" },
+    { "value": "+20% YoY", "label": "SaaS Customer Base Growth" },
+    { "value": "75% / 25%", "label": "Personal vs Team Sales Split" },
+    { "value": "+20%", "label": "Annual Target Exceeded" },
+    { "value": "-30%", "label": "Manual Workload Reduction" },
+    { "value": "-25%", "label": "Project Delivery Timeline Improvement" },
+    { "value": "4-Member", "label": "Cross-Functional Team Led" }
+  ],
+  "skills": [
+    "SaaS Sales",
+    "ERP Solutions",
+    "Business Development",
+    "CRM / Client Relationship Management",
+    "Digital Marketing",
+    "SEO",
+    "Social Media Marketing",
+    "Email Campaigns",
+    "Team Leadership & Sales Management",
+    "KPI-Driven Performance Monitoring",
+    "Market Research & Competitive Analysis",
+    "Presentation & Training",
+    "AI Marketing",
+    "Agile Methodologies",
+    "Kaizen / Process Optimization",
+    "Software Project Management",
+    "Event Activation"
+  ],
+  "campaigns": [
+    {
+      "title": "Digital Transformation & SaaS Automation — Pakiza Software",
+      "type": "B2B SaaS Sales",
+      "metric": "BDT 1.5 Cr annual revenue; +20% YoY customer base",
+      "challenge": "Pakiza Group needed to accelerate digital transformation and adopt SaaS-based automation across departments to replace manual processes, improve reporting accuracy, and build recurring revenue streams.",
+      "strategy": "Spearheaded SaaS automation initiatives and strategic business development across the group. Led a 4-member cross-functional team to design, implement, and optimize ERP and automation systems. Collaborated with department heads to automate key business processes and implemented KPI-driven performance monitoring frameworks using agile methodologies.",
+      "result": "Achieved 1.5 crore annual sales revenue through strategic business development. Increased SaaS model customer base by 20% year-over-year, driving recurring revenue growth and improved customer retention. Reduced manual workloads by 30% and improved project delivery timelines by 25% through data-driven engagement and seamless system integration."
+    },
+    {
+      "title": "Marketing Head & ERP Solutions — Pakiza Technovation",
+      "type": "Channel / Enterprise Sales",
+      "metric": "75% personal / 25% team sales; +20% above target",
+      "challenge": "The company required a leader to build sales operations from the ground up, drive brand awareness, and deliver enterprise ERP and custom software solutions to new and existing clients in a competitive software market.",
+      "strategy": "Acted as Marketing Head while developing business strategies to meet sales targets. Managed the entire sales cycle from lead generation to deal closure. Led company operations including hiring and training new team members. Conducted market research and competitive analysis to identify new business opportunities and industry trends.",
+      "result": "Achieved personal sales of 75% and team sales of 25%, exceeding targets by 20% per year. Developed and marketed ERP solutions and custom software applications that met client needs. Maintained excellent customer service and long-term client relationships, establishing a high level of client satisfaction."
+    },
+    {
+      "title": "Vertical Market Expansion — Agami Soft",
+      "type": "B2B Software Sales",
+      "metric": "Multi-vertical growth across School, Hospital, Courier & Garments",
+      "challenge": "Agami Soft needed to expand its customer base across multiple software verticals — school, hospital, courier, and garments management — while staying ahead of market shifts and driving consistent sales performance.",
+      "strategy": "Managed a team of sales executives and developed strategic sales plans for each vertical. Identified emerging markets and market shifts through in-depth industry analysis. Coordinated with cross-functional business leaders, monitored regional sales, and led product launches, marketing campaigns, and promotional activities.",
+      "result": "Successfully achieved growth and met sales targets across all four verticals. Expanded the company's customer base and increased revenue through strategic plan execution. Maintained strong client and stakeholder relationships ensuring high levels of customer satisfaction and retention."
+    },
+    {
+      "title": "ICT Product Marketing — Ethics Advanced Technology",
+      "type": "Digital Acquisition",
+      "metric": "Strategic marketing plans driving ICT product revenue growth",
+      "challenge": "Ethics Advanced Technology required coordinated marketing and sales strategies to grow revenue across diverse ICT products and services, including digital marketing offerings, promotions, and sponsored events.",
+      "strategy": "Developed and executed strategic marketing plans to drive growth and revenue. Managed and mentored a team of sales professionals to achieve individual and team targets. Coordinated with cross-functional teams on product messaging, pricing, and promotional strategies. Analyzed trends, demographics, and pricing strategies to optimize performance.",
+      "result": "Delivered coordinated sales strategies and approaches for various ICT products and services. Improved marketing and sales performance through data-driven analysis of trends and demographics. Built a high-performing sales team aligned with company revenue objectives."
+    },
+    {
+      "title": "Foundation Sales & Market Entry — Mahmud IT",
+      "type": "Sales & Marketing",
+      "metric": "Revenue growth through new business development & campaigns",
+      "challenge": "Mahmud IT needed to establish market presence and drive revenue for software products through effective sales strategies, customer relationship building, and competitive market positioning.",
+      "strategy": "Developed and implemented sales strategies to achieve sales targets and increase revenue. Built and maintained customer relationships while identifying new business opportunities. Conducted market research and competitor analysis to develop effective marketing campaigns. Coordinated with cross-functional teams for smooth product delivery and prepared client presentations.",
+      "result": "Increased revenue for software products through targeted sales strategies. Expanded the customer base by identifying and pursuing new business opportunities. Delivered compelling presentations to clients and stakeholders, showcasing products and services effectively."
+    }
+  ]
+}
